@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countKthRoots(int l, int r, int k) {
-        if(k == 1){
+        if(k == 1){ //for only special testcase
             return r - l + 1;
         }
         int count = 0;
