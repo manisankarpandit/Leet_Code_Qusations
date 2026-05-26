@@ -16,12 +16,8 @@ public:
                 count++;
                 char lc = s[i];
                 char uc = t[j];
-
-                while(i < s.size() && s[i] == lc)
-                    i++;
-
-                while(j < t.size() && t[j] == uc)
-                    j++;
+                while(i < s.size() && s[i] == lc) i++;
+                while(j < t.size() && t[j] == uc) j++;
             }
             else if(s[i] - t[j] < 32) i++;
             else j++;
