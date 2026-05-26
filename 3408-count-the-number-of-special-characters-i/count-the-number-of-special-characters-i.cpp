@@ -12,14 +12,15 @@ public:
         int count = 0;
         int i = 0,j = 0;
         while(i<s.size() && j<t.size()){
-            if(s[i] - t[j] == 32) {
+            int diff = s[i] - t[j];
+            if(diff == 32) {
                 count++;
                 char lc = s[i];
                 char uc = t[j];
                 while(i < s.size() && s[i] == lc) i++;
                 while(j < t.size() && t[j] == uc) j++;
             }
-            else if(s[i] - t[j] < 32) i++;
+            else if(diff < 32) i++;
             else j++;
         }
         return count;
