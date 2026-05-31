@@ -2,19 +2,20 @@ class Solution {
 public:
     int digitFrequencyScore(int n) {
         string s = to_string(n);
-        // unordered_map<char,int>m;
-        int sum = 0;
+        unordered_map<char,int>m;
+        // int sum = 0;
         for(int i = 0;i<s.size();i++){
-            // m[s[i]]++;
-            int num = s[i]-'0';
-            sum+=num;
+            m[s[i]]++;
+            // int num = s[i]-'0';
+            // sum+=num;
         }
 
         // }
-        // int sum = 0;
-        // for(auto x:m){
-            
-        // }
+        int sum = 0;
+        for(auto x:m){
+            int num = x.first-'0';
+            sum+=(num*x.second);
+        }
         return sum;
     }
 };
