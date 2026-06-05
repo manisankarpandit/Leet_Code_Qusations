@@ -4,7 +4,7 @@ public:
         int n = arr.size();
         sort(arr.begin(),arr.end());
         vector<vector<int>>ans;
-        int diff = INT_MAX;
+        int diff = arr[1]-arr[0];
         for(int i = 1;i<n;i++){
             diff = min(diff,arr[i]-arr[i-1]);
         }
