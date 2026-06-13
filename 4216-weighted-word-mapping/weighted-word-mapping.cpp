@@ -1,7 +1,6 @@
 class Solution {
 public:
     string mapWordWeights(vector<string>& words, vector<int>& weights) {
-        int n = weights.size();
         int m = words.size();
         string t = "";
         for(int i = 0;i<m;i++){
