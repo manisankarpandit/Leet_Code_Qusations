@@ -8,7 +8,9 @@ public:
             else if (s[i] == '%') reverse(ans.begin(), ans.end());
             else if (s[i] == '#') ans += ans;
             else if (s[i] == '*'){
-                if (!ans.empty()) ans.pop_back();
+                if (!ans.empty()) {
+                    ans.pop_back();
+                }
             }
         }
         return ans;
