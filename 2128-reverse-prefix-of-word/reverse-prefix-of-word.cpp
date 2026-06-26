@@ -9,13 +9,20 @@ public:
                 break;
             }
         }
-        string s ="";
-        for(int i = idx;i>=0;i--){
-           s+=word[i];
+        // string s ="";
+        // for(int i = idx;i>=0;i--){
+        //    s+=word[i];
+        // }
+        // for(int i = idx+1;i<n;i++){
+        //     s+=word[i];
+        // }
+        int i = 0;
+        int j = idx;
+        while(i<j){
+            swap(word[i],word[j]);
+            i++;
+            j--;
         }
-        for(int i = idx+1;i<n;i++){
-            s+=word[i];
-        }
-        return s;
+        return word;
     }
 };
