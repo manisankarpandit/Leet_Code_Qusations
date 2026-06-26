@@ -16,7 +16,6 @@ public:
         for(int i = idx+1;i<n;i++){
             s+=word[i];
         }
-        // reverse(word.begin(),word.begin()+idx);
         return s;
     }
 };
