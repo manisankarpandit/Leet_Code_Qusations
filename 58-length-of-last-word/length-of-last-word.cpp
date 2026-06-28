@@ -9,7 +9,7 @@ public:
                 count++;
                 flag = true;
             }
-            else if(flag) break;
+            else if(flag==true) break;
         }
         return count;
     }
