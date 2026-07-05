@@ -2,7 +2,6 @@ class Solution {
 public:
     int maxDigitRange(vector<int>& nums) {
         int n = nums.size();
-        int sum = 0;
         int digit_diff = INT_MIN;
         for(int i = 0;i<n;i++){
             string s = to_string(nums[i]);
@@ -15,6 +14,7 @@ public:
             }
             digit_diff = max(digit_diff,mx-mn);
         }
+        int sum = 0;
         for(int i = 0;i<n;i++){
             string s = to_string(nums[i]);
             int mx = INT_MIN;
