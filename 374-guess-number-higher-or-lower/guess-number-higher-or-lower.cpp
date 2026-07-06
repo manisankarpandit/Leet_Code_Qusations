@@ -19,6 +19,6 @@ public:
             else if(guess(mid)==1) lo = mid+1;
             else hi = mid - 1;
         }
-        return -1;
+        return 1;
     }
 };
