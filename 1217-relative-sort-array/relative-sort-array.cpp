@@ -20,14 +20,12 @@ public:
             }
         }
         vector<int> temp;
-        for (auto &it : mp) {
-            while (it.second--) {
-                temp.push_back(it.first);
+        for (auto &x : mp) {
+            while (x.second--) {
+                temp.push_back(x.first);
             }
         }
-
         sort(temp.begin(), temp.end());
-
         for (int x : temp) {
             res.push_back(x);
         }
