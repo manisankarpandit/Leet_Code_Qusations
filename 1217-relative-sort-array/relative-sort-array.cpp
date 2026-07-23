@@ -1,11 +1,9 @@
 class Solution {
 public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
-        // sort(arr1.begin(),arr.end());
         unordered_map<int,int>mp;
         int n = arr1.size();
         int m = arr2.size();
-        // int i = 0, j = 0;
         for(int  i = 0;i<n;i++){
             mp[arr1[i]]++;
         }
