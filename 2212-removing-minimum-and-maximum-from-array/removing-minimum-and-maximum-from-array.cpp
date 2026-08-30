@@ -15,16 +15,9 @@ public:
                 mnidx = i;
             }
         }
-        
-         int left = max(mnidx, mxidx) + 1;
-
-        // Both from right
+        int left = max(mnidx, mxidx) + 1;
         int right = max(n - mnidx, n - mxidx);
-
-        // One from left, one from right
-        int mixed = min(mnidx, mxidx) + 1
-                  + n - max(mnidx, mxidx);
-
+        int mixed = min(mnidx, mxidx) + 1 + n - max(mnidx, mxidx);
         return min({left, right, mixed});
     }
 };
