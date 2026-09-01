@@ -16,13 +16,9 @@ public:
                 b++;
             }
         }
-        vector<int>res;
-        for(int x:arr1){
-            res.push_back(x);
-        }
         for(int x:arr2){
-            res.push_back(x);
+            arr1.push_back(x);
         }
-        return res;
+        return arr1;
     }
 };
