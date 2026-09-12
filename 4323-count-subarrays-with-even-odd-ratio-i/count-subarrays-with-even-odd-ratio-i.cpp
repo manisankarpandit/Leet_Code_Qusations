@@ -9,8 +9,7 @@ public:
         while (i < n) {
             if (nums[j] % 2 != 0) od++;
             else  ev++;
-            // even / odd <= a / b
-            if (od > 0 && ev * b <=od * a) {
+            if (od > 0 && ev * b<=od * a) {
                 count++;
             }
             j++;
