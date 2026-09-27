@@ -5,7 +5,7 @@ public:
         int i = 0;
         int j = 0;
         string ans = "";
-        while (i < s.size()) {
+        while (i < n) {
             if (s[i] == ')') {
                 j = i - 1;
                 while (j >= 0 && s[j] != '(') j--;
@@ -14,11 +14,8 @@ public:
                 s.erase(j, 1);  
                 i = 0;           
             }
-            else {
-                i++;
-            }
+            else i++;
         }
-
         return s;
     }
 };
