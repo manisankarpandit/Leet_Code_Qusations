@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool areNumbersAscending(string s) {
-        vector<int> arr;
         int n = s.size();
         stringstream ss(s);
         string word;
